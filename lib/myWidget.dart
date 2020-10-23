@@ -1,16 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:hello_md3/page2.dart';
 
-class MyWidget extends StatefulWidget{
-  MyWidgetState createState() => MyWidgetState();
-}
+class MyWidget extends StatelessWidget {
+  Widget build(BuildContext context) {
+    double _currentSliderValue = 20;
 
-class MyWidgetState extends State<MyWidget>{
-  Widget build(BuildContext context){
     return Container(
-        height: 10,
-        width: 200,
-        color: Colors.black,
-        child: Text("F"),
-      );
+      margin: const EdgeInsets.all(5),
+      height: 500,
+      width: 350,
+      color: Colors.grey,
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => SecondRoute()),
+          );
+        },
+        child: const Text('Open Page', style: TextStyle(fontSize: 20)),
+      ),
+    );
   }
 }

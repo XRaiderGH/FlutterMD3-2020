@@ -5,7 +5,6 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     double _currentSliderValue = 20;
 
-
     return Container(
       margin: const EdgeInsets.all(5),
       height: 500,
@@ -21,3 +20,5 @@ class MyWidget extends StatelessWidget {
         child: const Text('Open Page', style: TextStyle(fontSize: 20)),
       ),
     );
+  }
+}

@@ -7,10 +7,10 @@ class MyWidget extends StatelessWidget {
 
     return Container(
       margin: const EdgeInsets.all(5),
-      height: 500,
+      height: 200,
       width: 350,
       color: Colors.grey,
-      child: ElevatedButton(
+      child: RaisedButton(
         onPressed: () {
           Navigator.push(
             context,
